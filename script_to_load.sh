@@ -14,3 +14,8 @@ hdfs dfs -put /var/tmp/yellow_tripdata_2023-01.parquet /tmp/
 
 beeline -f create_database_table.hql
 beeline -f load_data.hql
+
+rm -rf /var/tmp/fhv_tripdata_2023-01.parquet
+rm -rf /var/tmp/fhvhv_tripdata_2023-01.parquet
+rm -rf /var/tmp/green_tripdata_2023-01.parquet
+rm -rf /var/tmp/yellow_tripdata_2023-01.parquet
